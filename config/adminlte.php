@@ -224,6 +224,12 @@ return [
     'sidebar_nav_accordion' => true,
     'sidebar_nav_animation_speed' => 300,
 
+    [
+        'text' => 'Manage Kategori',
+        'url' => 'kategori',
+        'icon' => 'far fa-fw fa-folder',
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Control Sidebar (Right Sidebar)
