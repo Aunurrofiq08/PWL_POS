@@ -5,17 +5,17 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\m_usermodel;
-use illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Validator;
 
 
 class RegisterController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $validator =Validator::make($request->all(),[
-            'validator' => 'required',
+        $validator = Validator::make($request->all(),[
+            'username' => 'required',
             'nama' => 'required',
-            'password' => 'required',
+            'password' => 'required|min:5|confirmed',
             'level_id' => 'required',
         ]);
 
