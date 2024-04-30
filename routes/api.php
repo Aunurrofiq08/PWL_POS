@@ -23,6 +23,7 @@ Route::post('/login',App\Http\Controllers\Api\LoginController::class)->name('log
 Route::middleware('auth:api')->get('/user',function (Request $request){
 return $request->user();
 });
+Route::post('/logout',App\Http\Controllers\Api\LogoutController::Class)->name('logout');
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
